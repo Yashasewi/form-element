@@ -1,18 +1,21 @@
 {
-  "name": "form-element",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "lit": "^2.7.6"
-  },
-  "devDependencies": {
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5"
-  }
+    "name": "form-element-compo",
+    "private": false,
+    "version": "0.1.0",
+    "type": "module",
+    "main": "my-element.js",
+    "module": "my-element.js",
+    "types": "my-element.d.ts",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "lit": "^2.7.6"
+    },
+    "devDependencies": {
+        "typescript": "^5.0.2",
+        "vite": "^4.4.5"
+    }
 }
