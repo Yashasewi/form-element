@@ -7,6 +7,7 @@ interface FormDataType {
     email: string | null;
     password?: string | null;
 }
+
 @customElement("form-element-compo")
 export class MyElement extends LitElement {
     @property({ type: Object })
@@ -14,13 +15,17 @@ export class MyElement extends LitElement {
 
     @property({ type: Boolean })
     changeValue = false;
+    @property({ type: String })
+    test: String = "";
 
     render() {
         return html`
             <main>
                 <h1>
                     Form which has button and change ui according to that button
+                    ${this.test}
                 </h1>
+
                 <div>
                     <button @click=${this.__changeValueFunction}>
                         Yo click me bro
