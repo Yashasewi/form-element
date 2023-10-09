@@ -15,8 +15,9 @@ export declare class MyElement extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        "my-element": MyElement;
+        "form-element-compo": MyElement;
     }
 }
+export declare const MyFormElement: React.ForwardRefExoticComponent<any>;
 export {};
 //# sourceMappingURL=my-element.d.ts.map

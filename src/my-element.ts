@@ -1,12 +1,13 @@
+import { createComponent } from "@lit-labs/react";
 import { LitElement, css, html } from "lit";
 import { customElement, property } from "lit/decorators.js";
-
+import React from "react";
 interface FormDataType {
     name: string | null;
     email: string | null;
     password?: string | null;
 }
-@customElement("my-element")
+@customElement("form-element-compo")
 export class MyElement extends LitElement {
     @property({ type: Object })
     FormData: FormDataType = { name: "", email: "" };
@@ -154,6 +155,12 @@ export class MyElement extends LitElement {
 
 declare global {
     interface HTMLElementTagNameMap {
-        "my-element": MyElement;
+        "form-element-compo": MyElement;
     }
 }
+
+export const MyFormElement = createComponent({
+    react: React,
+    elementClass: MyElement,
+    tagName: "form-element-compo",
+});

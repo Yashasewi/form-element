@@ -1,7 +1,7 @@
 {
     "name": "form-element-compo",
     "private": false,
-    "version": "0.1.0",
+    "version": "0.2.0",
     "type": "module",
     "main": "my-element.js",
     "module": "my-element.js",
@@ -12,7 +12,10 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "lit": "^2.7.6"
+        "@lit-labs/react": "^2.1.0",
+        "@types/react": "^18.2.26",
+        "lit": "^2.7.6",
+        "react": "^18.2.0"
     },
     "devDependencies": {
         "typescript": "^5.0.2",
